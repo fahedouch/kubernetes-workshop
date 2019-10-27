@@ -50,7 +50,7 @@ echo 'the tarball is composed from :'
 sudo tar -tf cri-containerd-${containerdVersion}.linux-amd64.tar.gz
 sudo tar --no-overwrite-dir -C / -xzf cri-containerd-${containerdVersion}.linux-amd64.tar.gz
 sudo systemctl start containerd
-```
+````
 
 ## Step 5 : Setup kubelet configuration
 Create kubelet conf file that uses containerd socket `/etc/systemd/system/kubelet.service.d/0-containerd.conf``:
